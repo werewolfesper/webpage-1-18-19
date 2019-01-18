@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <center>
+  <h1>Welcome to Creamers </h1>
+     <font size="5">
+    Family owned resturaunt with food and drinks you and your family will love!
+     </font>
+</head>
+  
+  <style>
+  body {
+    background-image: url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/20228816_1252391864883574_6853620737198817674_n.jpg?_nc_cat=110&_nc_ht=scontent-atl3-1.xx&oh=a357bd926135540dcc79c87556ffcfed&oe=5CCF4E04);
+    background-repeat: no-repeat;
+    background-size: 1125px 805px;
+  }
+</style>
+  
+  <h2>Hours</h2>
+<ul style="list-style: none;">
+  <font size="5">
+    <li>Sunday closed
+      <li>Monday-Thursday 5:30 AM-8:30 PM
+        <li>Friday 5:30 AM-9:00 PM
+          <li>Saturday 8:00 AM-8:30 PM
+</ul>
+</font>
+<font size="5">
+  <h3>Contact information and address</h3>
+  <p>
+    731-935-9370<br> 358 S Main St<br> Medina, TN 38355<br>
+  </p>
+</font>
+  <section>
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c33.0.200.200a/p200x200/49330439_1822301571225931_6677945233495293952_n.jpg?_nc_cat=111&_nc_ht=scontent-atl3-1.xx&oh=5affb577017b608ed980c8f150cc470f&oe=5CBED902" style="width:20%">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/47008775_1773179282804827_4109839469509607424_n.jpg?_nc_cat=102&_nc_ht=scontent-atl3-1.xx&oh=80a77a3f796da08dadb57b186df8f09a&oe=5CC22A2A" width="20%">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.21.200.200a/p200x200/44581776_1719001494889273_5194663425824784384_n.jpg?_nc_cat=101&_nc_ht=scontent-atl3-1.xx&oh=4bbbef848942a61f98c971d3c2eaf805&oe=5CD0A090" width="20%">
+</section>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+      </script>
+</html>
